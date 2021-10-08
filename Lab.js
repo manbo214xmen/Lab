@@ -15,8 +15,8 @@ const server = http.createServer(
         switch (req.url) {
             case "/home":
                 res.writeHead(200);
-                var data = fs.readFileSync("./bistro.html");
-                res.end(data);
+                res.end("<h1>This is Home page</h1>");
+                
                 break;
             case "/about":
                 res.writeHead(200);
